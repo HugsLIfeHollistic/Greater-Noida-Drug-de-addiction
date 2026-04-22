@@ -1,199 +1,1039 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hugslife Holistic</title>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --fuchsia: #c2185b;
-      --fuchsia-light: #f06292;
-      --dark: #1a1a1a;
-      --light: #ffffff;
-      --gray: #f5f5f5;
-    }
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
-
-    body {
-      background: var(--gray);
-      color: var(--dark);
-    }
-
-    header {
-      background: var(--light);
-      padding: 20px 50px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
-    }
-
-    header h1 {
-      color: var(--fuchsia);
-    }
-
-    nav a {
-      margin-left: 25px;
-      text-decoration: none;
-      color: var(--dark);
-      font-weight: 500;
-      transition: 0.3s;
-    }
-
-    nav a:hover {
-      color: var(--fuchsia);
-    }
-
-    .hero {
-      height: 90vh;
-      background: linear-gradient(rgba(194,24,91,0.7), rgba(240,98,146,0.7)), url('https://images.unsplash.com/photo-1526256262350-7da7584cf5eb');
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-      color: white;
-      padding: 20px;
-    }
-
-    .hero h2 {
-      font-size: 3rem;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 30px;
-    }
-
-    .btn {
-      background: var(--light);
-      color: var(--fuchsia);
-      padding: 12px 30px;
-      border-radius: 30px;
-      text-decoration: none;
-      font-weight: 600;
-      transition: 0.3s;
-    }
-
-    .btn:hover {
-      background: var(--fuchsia);
-      color: white;
-      transform: translateY(-3px);
-      box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-    }
-
-    .section {
-      padding: 80px 50px;
-      text-align: center;
-    }
-
-    .section h3 {
-      color: var(--fuchsia);
-      margin-bottom: 20px;
-      font-size: 2rem;
-    }
-
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 30px;
-      margin-top: 40px;
-    }
-
-    .card {
-      background: white;
-      padding: 30px;
-      border-radius: 20px;
-      transition: 0.3s;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.05);
-    }
-
-    .card:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 20px 40px rgba(194,24,91,0.2);
-    }
-
-    .card h4 {
-      margin-bottom: 15px;
-      color: var(--fuchsia);
-    }
-
-    footer {
-      background: var(--dark);
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hugs Life Holistic — Drug De-Addiction & Rehabilitation Centre | Greater Noida</title>
+  <meta name="description" content="Hugs Life Holistic is a leading mental health and drug de-addiction rehabilitation centre in Greater Noida, with a branch in Dehradun. Proudly supporting Nasha Mukt Bharat Abhiyan." />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 </head>
 <body>
 
-<header>
-  <h1>Hugslife Holistic</h1>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">About</a>
-    <a href="#">Programs</a>
-    <a href="#">Contact</a>
-  </nav>
-</header>
+<!-- ===== AMBIENT PETAL BACKGROUND ===== -->
+<div class="petal-bg"></div>
 
-<section class="hero">
-  <div>
-    <h2>Healing Lives, Restoring Hope</h2>
-    <p>Comprehensive Drug De-Addiction & Mental Health Care with Family Counseling Support</p>
-    <a href="#" class="btn">Get Help Now</a>
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar">
+  <div class="nav-inner">
+    <a class="nav-brand" href="#" data-page="home">
+      <span class="brand-name">Hugs Life Holistic</span>
+      <span class="brand-tag">A Mental Health Establishment</span>
+    </a>
+    <ul class="nav-links">
+      <li><a class="nav-link" data-page="home" href="#">Home</a></li>
+
+      <li>
+        <button class="nav-btn">Services <span class="dropdown-arrow">▾</span></button>
+        <ul class="nav-dropdown">
+          <li><a class="nav-link" data-page="services" href="#" data-tab="family">Family Counselling</a></li>
+          <li><a class="nav-link" data-page="services" href="#" data-tab="rehab">Rehabilitation Services</a></li>
+          <li><a class="nav-link" data-page="services" href="#" data-tab="drug">Drug Addiction Programme</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <button class="nav-btn">Gallery & Tour <span class="dropdown-arrow">▾</span></button>
+        <ul class="nav-dropdown">
+          <li><a class="nav-link" data-page="gallery" href="#">Our Facility</a></li>
+          <li><a class="nav-link" data-page="gallery" href="#">Inside Centre — Rooms & Beds</a></li>
+          <li><a class="nav-link" data-page="gallery" href="#">Cleanliness & Hygiene</a></li>
+          <li><a class="nav-link" data-page="gallery" href="#">Safety & Care</a></li>
+          <li><a class="nav-link" data-page="gallery" href="#">Food & Nutrition</a></li>
+        </ul>
+      </li>
+
+      <li>
+        <button class="nav-btn">Location & Contact <span class="dropdown-arrow">▾</span></button>
+        <ul class="nav-dropdown">
+          <li><a class="nav-link" data-page="location" href="#">Greater Noida (Main)</a></li>
+          <li><a class="nav-link" data-page="location" href="#">Dehradun Branch</a></li>
+          <li><a class="nav-link" data-page="location" href="#">Contact Us</a></li>
+        </ul>
+      </li>
+
+      <li><a class="nav-link" data-page="why" href="#">Why HLH?</a></li>
+      <li><a class="nav-link nav-cta" data-page="location" href="#">📞 Get Help Now</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
   </div>
-</section>
+</nav>
 
-<section class="section">
-  <h3>Our Core Services</h3>
-  <div class="cards">
-    <div class="card">
-      <h4>De-Addiction Treatment</h4>
-      <p>Structured recovery programs designed to help individuals overcome substance dependence safely.</p>
+<!-- ===== MOBILE NAV ===== -->
+<div class="mobile-nav" id="mobileNav">
+  <a class="nav-link" data-page="home" href="#">Home</a>
+  <button class="mnav-btn">Services</button>
+  <div class="mobile-sub">
+    <a class="nav-link" data-page="services" href="#">Family Counselling</a>
+    <a class="nav-link" data-page="services" href="#">Rehabilitation Services</a>
+    <a class="nav-link" data-page="services" href="#">Drug Addiction Programme</a>
+  </div>
+  <button class="mnav-btn">Gallery & Centre Tour</button>
+  <div class="mobile-sub">
+    <a class="nav-link" data-page="gallery" href="#">Our Facility</a>
+    <a class="nav-link" data-page="gallery" href="#">Inside Centre</a>
+    <a class="nav-link" data-page="gallery" href="#">Safety & Care</a>
+    <a class="nav-link" data-page="gallery" href="#">Food & Nutrition</a>
+  </div>
+  <button class="mnav-btn">Location & Contact</button>
+  <div class="mobile-sub">
+    <a class="nav-link" data-page="location" href="#">Greater Noida</a>
+    <a class="nav-link" data-page="location" href="#">Dehradun Branch</a>
+  </div>
+  <a class="nav-link" data-page="why" href="#">Why HLH?</a>
+  <a class="nav-link" data-page="location" href="#">📞 Get Help Now</a>
+</div>
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 1 — HOME
+════════════════════════════════════════════════ -->
+<div class="page active" id="home">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-floral-deco">
+      <div class="petal petal-1"></div>
+      <div class="petal petal-2"></div>
+      <div class="petal petal-3"></div>
+      <div class="petal petal-4"></div>
     </div>
-    <div class="card">
-      <h4>Mental Health Care</h4>
-      <p>Holistic mental health support focusing on emotional and psychological wellbeing.</p>
+    <div class="hero-content">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Proudly Supporting Nasha Mukt Bharat Abhiyan
+        </div>
+        <h1 class="hero-title">
+          Healing Begins With a<br>
+          <em>Single Step of Courage</em>
+        </h1>
+        <p class="hero-subtitle">
+          Hugs Life Holistic is a compassionate mental health and drug de-addiction rehabilitation centre in Greater Noida, dedicated to restoring lives and rebuilding families with holistic care.
+        </p>
+        <div class="hero-buttons">
+          <a href="#" class="btn-primary nav-link" data-page="location">📞 Call Now: 8447681144</a>
+          <a href="#" class="btn-secondary nav-link" data-page="services">Explore Services</a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <div class="stat-num"><span class="count-up" data-target="500" data-suffix="+">0+</span></div>
+            <div class="stat-label">Lives Transformed</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num"><span class="count-up" data-target="2" data-suffix="">0</span></div>
+            <div class="stat-label">Centres Across India</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-num"><span class="count-up" data-target="24" data-suffix="/7">0</span></div>
+            <div class="stat-label">Support Available</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Fuchsia Flower SVG Mandala -->
+      <div class="hero-visual">
+        <div class="flower-mandala">
+          <svg viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+              <radialGradient id="pg1" cx="50%" cy="30%" r="60%">
+                <stop offset="0%" stop-color="#F48FB1"/>
+                <stop offset="100%" stop-color="#C2185B"/>
+              </radialGradient>
+              <radialGradient id="pg2" cx="50%" cy="30%" r="60%">
+                <stop offset="0%" stop-color="#E91E8C"/>
+                <stop offset="100%" stop-color="#8B0057"/>
+              </radialGradient>
+              <radialGradient id="pg3" cx="50%" cy="30%" r="60%">
+                <stop offset="0%" stop-color="#FCE4EC"/>
+                <stop offset="100%" stop-color="#F48FB1"/>
+              </radialGradient>
+              <filter id="glow">
+                <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+                <feMerge><feMergeNode in="coloredBlur"/><feMergeNode in="SourceGraphic"/></feMerge>
+              </filter>
+            </defs>
+            <!-- Outer ring glow -->
+            <circle cx="210" cy="210" r="190" fill="none" stroke="rgba(194,24,91,0.08)" stroke-width="40"/>
+            <circle cx="210" cy="210" r="155" fill="none" stroke="rgba(233,30,140,0.06)" stroke-width="1" stroke-dasharray="8 6"/>
+
+            <!-- Big petals layer 1 -->
+            <g transform="translate(210,210)" filter="url(#glow)">
+              <ellipse rx="32" ry="100" fill="url(#pg1)" opacity="0.9"/>
+              <ellipse rx="32" ry="100" fill="url(#pg2)" opacity="0.85" transform="rotate(45)"/>
+              <ellipse rx="32" ry="100" fill="url(#pg1)" opacity="0.9" transform="rotate(90)"/>
+              <ellipse rx="32" ry="100" fill="url(#pg2)" opacity="0.85" transform="rotate(135)"/>
+              <ellipse rx="32" ry="100" fill="url(#pg1)" opacity="0.9" transform="rotate(180)"/>
+              <ellipse rx="32" ry="100" fill="url(#pg2)" opacity="0.85" transform="rotate(225)"/>
+              <ellipse rx="32" ry="100" fill="url(#pg1)" opacity="0.9" transform="rotate(270)"/>
+              <ellipse rx="32" ry="100" fill="url(#pg2)" opacity="0.85" transform="rotate(315)"/>
+            </g>
+
+            <!-- Mid petals layer 2 -->
+            <g transform="translate(210,210) rotate(22.5)">
+              <ellipse rx="20" ry="70" fill="url(#pg3)" opacity="0.7"/>
+              <ellipse rx="20" ry="70" fill="url(#pg3)" opacity="0.7" transform="rotate(45)"/>
+              <ellipse rx="20" ry="70" fill="url(#pg3)" opacity="0.7" transform="rotate(90)"/>
+              <ellipse rx="20" ry="70" fill="url(#pg3)" opacity="0.7" transform="rotate(135)"/>
+              <ellipse rx="20" ry="70" fill="url(#pg3)" opacity="0.7" transform="rotate(180)"/>
+              <ellipse rx="20" ry="70" fill="url(#pg3)" opacity="0.7" transform="rotate(225)"/>
+              <ellipse rx="20" ry="70" fill="url(#pg3)" opacity="0.7" transform="rotate(270)"/>
+              <ellipse rx="20" ry="70" fill="url(#pg3)" opacity="0.7" transform="rotate(315)"/>
+            </g>
+
+            <!-- Inner petals layer 3 -->
+            <g transform="translate(210,210)">
+              <ellipse rx="14" ry="46" fill="#E91E8C" opacity="0.8"/>
+              <ellipse rx="14" ry="46" fill="#C2185B" opacity="0.8" transform="rotate(60)"/>
+              <ellipse rx="14" ry="46" fill="#E91E8C" opacity="0.8" transform="rotate(120)"/>
+              <ellipse rx="14" ry="46" fill="#C2185B" opacity="0.8" transform="rotate(180)"/>
+              <ellipse rx="14" ry="46" fill="#E91E8C" opacity="0.8" transform="rotate(240)"/>
+              <ellipse rx="14" ry="46" fill="#C2185B" opacity="0.8" transform="rotate(300)"/>
+            </g>
+
+            <!-- Centre circle -->
+            <circle cx="210" cy="210" r="28" fill="url(#pg2)" filter="url(#glow)"/>
+            <circle cx="210" cy="210" r="18" fill="#FCE4EC"/>
+            <circle cx="210" cy="210" r="10" fill="#E91E8C"/>
+
+            <!-- Stamens dots -->
+            <g transform="translate(210,210)">
+              <circle cx="0" cy="-22" r="3" fill="#8B0057" opacity="0.9"/>
+              <circle cx="19" cy="-11" r="3" fill="#8B0057" opacity="0.9"/>
+              <circle cx="19" cy="11" r="3" fill="#8B0057" opacity="0.9"/>
+              <circle cx="0" cy="22" r="3" fill="#8B0057" opacity="0.9"/>
+              <circle cx="-19" cy="11" r="3" fill="#8B0057" opacity="0.9"/>
+              <circle cx="-19" cy="-11" r="3" fill="#8B0057" opacity="0.9"/>
+            </g>
+
+            <!-- Rotating animation element -->
+            <animateTransform attributeName="transform" type="rotate"
+              from="0 210 210" to="360 210 210" dur="60s" repeatCount="indefinite"
+              additive="sum" xlink:href="#unused"/>
+          </svg>
+        </div>
+      </div>
     </div>
-    <div class="card">
-      <h4>Family Counseling</h4>
-      <p>Addressing behavioral and family dynamics that contribute to addiction and recovery challenges.</p>
+  </section>
+
+  <!-- GOVT BADGE STRIP -->
+  <section class="section accent-band">
+    <div class="section-inner" style="padding:2rem 2rem;">
+      <div class="govt-banner">
+        <span class="flag">🇮🇳</span>
+        <div class="govt-banner-text">
+          <strong>Proudly Supporting — Nasha Mukt Bharat Abhiyan</strong>
+          <span>An initiative of the Government of India · Ministry of Social Justice and Empowerment</span>
+        </div>
+        <a href="tel:8447681144" class="btn-primary" style="flex-shrink:0;">📞 8447681144</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT INTRO -->
+  <section class="section">
+    <div class="section-inner">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;" class="two-col-grid">
+        <div class="reveal">
+          <span class="section-label">Who We Are</span>
+          <h2 class="section-title">A Sanctuary of <span>Hope & Healing</span></h2>
+          <div class="divider"></div>
+          <p style="color:var(--warm-gray);line-height:1.8;margin-bottom:1.2rem;">
+            Hugs Life Holistic is a registered mental health and drug de-addiction rehabilitation establishment, operating with deep compassion and clinical expertise. Our flagship centre is located in <strong>Greater Noida</strong>, with a branch centre at <strong>Dehradun</strong>.
+          </p>
+          <p style="color:var(--warm-gray);line-height:1.8;margin-bottom:1.8rem;">
+            We believe that every individual deserves a second chance — a life free from addiction, filled with purpose, dignity, and love. Through our multi-disciplinary approach, we address addiction at its root: physically, psychologically, socially, and spiritually.
+          </p>
+          <a href="#" class="btn-primary nav-link" data-page="why">Discover Our Approach →</a>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <div class="cards-grid" style="grid-template-columns:1fr 1fr;">
+            <div class="card">
+              <div class="card-icon">🧠</div>
+              <div class="card-title">Mental Health</div>
+              <p>Comprehensive psychiatric assessment and care for co-occurring mental health disorders.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">💊</div>
+              <div class="card-title">Detox Support</div>
+              <p>Medically supervised detoxification in a safe, comfortable environment.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">👨‍👩‍👧</div>
+              <div class="card-title">Family Healing</div>
+              <p>Involving families in the recovery journey for lasting transformation.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">🌿</div>
+              <div class="card-title">Holistic Wellness</div>
+              <p>Yoga, meditation, nutrition, and life-skills for complete well-being.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES OVERVIEW -->
+  <section class="section accent-band">
+    <div class="section-inner">
+      <div class="section-header center reveal">
+        <span class="section-label">Our Core Services</span>
+        <h2 class="section-title">Pathways to <span>Recovery</span></h2>
+        <div class="divider center"></div>
+        <p class="section-desc">We offer comprehensive, evidence-based programmes tailored to each individual's unique journey to sobriety and mental wellness.</p>
+      </div>
+      <div class="cards-grid">
+        <div class="card reveal reveal-delay-1">
+          <div class="card-icon">👨‍👩‍👦</div>
+          <div class="card-title">Family Counselling</div>
+          <p>Structured family therapy sessions that repair relationships, rebuild trust, and equip families with tools to support their loved one's recovery.</p>
+          <a href="#" class="btn-secondary nav-link" data-page="services" style="display:inline-block;margin-top:1rem;font-size:0.82rem;padding:0.5rem 1.2rem;">Learn More →</a>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card-icon">🏥</div>
+          <div class="card-title">Rehabilitation Services</div>
+          <p>Long-term residential rehabilitation with structured daily routines, therapy, vocational training, and relapse prevention strategies.</p>
+          <a href="#" class="btn-secondary nav-link" data-page="services" style="display:inline-block;margin-top:1rem;font-size:0.82rem;padding:0.5rem 1.2rem;">Learn More →</a>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card-icon">🚫</div>
+          <div class="card-title">Drug Addiction Programme</div>
+          <p>Our flagship de-addiction programme integrates medical detox, cognitive behavioural therapy, 12-step facilitation, and aftercare planning.</p>
+          <a href="#" class="btn-secondary nav-link" data-page="services" style="display:inline-block;margin-top:1rem;font-size:0.82rem;padding:0.5rem 1.2rem;">Learn More →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="section">
+    <div class="section-inner">
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:start;" class="two-col-grid">
+        <div class="reveal">
+          <span class="section-label">Our Process</span>
+          <h2 class="section-title">Your Journey to <span>Freedom</span></h2>
+          <div class="divider"></div>
+          <p style="color:var(--warm-gray);line-height:1.8;margin-bottom:2rem;">From the moment you reach out, we walk beside you at every step with warmth, clinical expertise, and unwavering commitment to your recovery.</p>
+          <div class="steps">
+            <div class="step">
+              <div class="step-num">01</div>
+              <div class="step-text">
+                <h4>Initial Assessment</h4>
+                <p>Confidential intake interview and comprehensive clinical evaluation by our psychiatric and addiction specialist team.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">02</div>
+              <div class="step-text">
+                <h4>Personalised Treatment Plan</h4>
+                <p>A customised roadmap combining medical, psychological, nutritional and spiritual interventions.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">03</div>
+              <div class="step-text">
+                <h4>Residential Treatment</h4>
+                <p>Safe, structured, residential care with 24/7 medical monitoring, individual and group therapy, and holistic wellness activities.</p>
+              </div>
+            </div>
+            <div class="step">
+              <div class="step-num">04</div>
+              <div class="step-text">
+                <h4>Aftercare & Family Reintegration</h4>
+                <p>Ongoing support, follow-up counselling, and family workshops to ensure lasting recovery beyond our walls.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="reveal reveal-delay-2">
+          <!-- Testimonials -->
+          <span class="section-label">Voices of Hope</span>
+          <h3 style="font-family:var(--font-display);font-size:1.8rem;color:var(--charcoal);margin-bottom:1.5rem;margin-top:0.4rem;">What Families Say</h3>
+          <div style="display:flex;flex-direction:column;gap:1.2rem;">
+            <div class="testimonial-card">
+              <p>My son was in the deepest pit of addiction. Hugs Life Holistic not only helped him recover but gave our entire family a new beginning. The counsellors here are angels.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">R</div>
+                <div class="author-info">
+                  <div class="name">Rajesh Kumar</div>
+                  <div class="role">Father of a Resident · Greater Noida</div>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p>The holistic approach — yoga, proper nutrition, therapy and follow-up — made all the difference. My husband has been sober for 18 months now. Forever grateful.</p>
+              <div class="testimonial-author">
+                <div class="author-avatar">P</div>
+                <div class="author-info">
+                  <div class="name">Priya Sharma</div>
+                  <div class="role">Spouse of a Graduate · Dehradun</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA BAND -->
+  <section class="section band-fuchsia">
+    <div class="section-inner" style="text-align:center;">
+      <span class="section-label" style="color:var(--fuchsia-light);">Take the First Step</span>
+      <h2 class="section-title" style="color:var(--white);margin-bottom:1rem;">Ready to Begin Your <span style="color:var(--fuchsia-light);">Recovery?</span></h2>
+      <p style="color:rgba(255,255,255,0.8);max-width:520px;margin:0 auto 2.5rem;line-height:1.78;">Our compassionate team is available 24/7. A single call can change everything. Reach out today — healing is possible, and we are here for you.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;">
+        <a href="tel:8447681144" class="btn-primary" style="background:var(--white);color:var(--fuchsia-deep);box-shadow:0 6px 24px rgba(0,0,0,0.18);">📞 Call: 8447681144</a>
+        <a href="tel:7303729913" class="btn-secondary" style="border-color:rgba(255,255,255,0.5);color:var(--white);">📞 Alt: 7303729913</a>
+        <a href="#" class="btn-secondary nav-link" data-page="location" style="border-color:rgba(255,255,255,0.5);color:var(--white);">Find Our Centre</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end #home -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 2 — SERVICES
+════════════════════════════════════════════════ -->
+<div class="page" id="services">
+  <div style="height:72px;"></div>
+
+  <!-- Services Hero Banner -->
+  <div style="background:linear-gradient(135deg,var(--fuchsia-pale),#ffd6e8);padding:3.5rem 2rem 2.5rem;text-align:center;border-bottom:1px solid rgba(194,24,91,0.1);">
+    <div style="max-width:640px;margin:auto;">
+      <span class="section-label">Comprehensive Care</span>
+      <h1 class="section-title" style="font-size:clamp(1.8rem,4vw,2.8rem);">Our <span>Services</span></h1>
+      <div class="divider center"></div>
+      <p style="color:var(--warm-gray);line-height:1.78;">Tailored, evidence-based programmes for lasting recovery from addiction and mental health challenges.</p>
     </div>
   </div>
-</section>
 
-<section class="section" style="background:#fff;">
-  <h3>Why Choose Us</h3>
-  <p>We believe recovery is not just about quitting substances, but rebuilding lives through compassion, therapy, and family support.</p>
-</section>
+  <section class="section">
+    <div class="section-inner">
 
+      <!-- Service Tabs -->
+      <div class="service-tabs">
+        <button class="tab-btn active" data-tab="family">👨‍👩‍👦 Family Counselling</button>
+        <button class="tab-btn" data-tab="rehab">🏥 Rehabilitation Services</button>
+        <button class="tab-btn" data-tab="drug">🚫 Drug Addiction Programme</button>
+      </div>
+
+      <!-- Family Counselling Panel -->
+      <div class="tab-panel active" data-panel="family">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;" class="two-col-grid">
+          <div>
+            <h2 class="section-title">Family <span>Counselling</span></h2>
+            <div class="divider"></div>
+            <p style="color:var(--warm-gray);line-height:1.8;margin-bottom:1.5rem;">
+              Addiction does not occur in isolation — it impacts the entire family system. Our family counselling programme is designed to heal relationships, rebuild trust, and empower loved ones to become pillars of recovery support.
+            </p>
+            <p style="color:var(--warm-gray);line-height:1.8;margin-bottom:1.8rem;">
+              We provide structured sessions facilitated by experienced family therapists who understand the unique cultural and social contexts of Indian families.
+            </p>
+            <div class="steps">
+              <div class="step">
+                <div class="step-num">✦</div>
+                <div class="step-text"><h4>Initial Family Assessment</h4><p>Understanding family dynamics, codependency patterns, and trauma history.</p></div>
+              </div>
+              <div class="step">
+                <div class="step-num">✦</div>
+                <div class="step-text"><h4>Joint Therapy Sessions</h4><p>Structured sessions with the patient and family members for open, guided communication.</p></div>
+              </div>
+              <div class="step">
+                <div class="step-num">✦</div>
+                <div class="step-text"><h4>Boundaries & Communication Training</h4><p>Practical tools for healthy boundaries, communication, and relapse prevention at home.</p></div>
+              </div>
+              <div class="step">
+                <div class="step-num">✦</div>
+                <div class="step-text"><h4>Ongoing Family Support Groups</h4><p>Regular support group meetings for family members navigating the recovery journey.</p></div>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="background:var(--fuchsia-blush);border:none;">
+              <h3 style="font-family:var(--font-display);font-size:1.4rem;color:var(--fuchsia-deep);margin-bottom:1rem;">What You Can Expect</h3>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:0.9rem;">
+                <li style="display:flex;gap:0.75rem;align-items:flex-start;"><span style="color:var(--fuchsia-core);font-size:1.1rem;">✓</span><span style="color:var(--warm-gray);font-size:0.9rem;">Qualified family therapists with addiction specialisation</span></li>
+                <li style="display:flex;gap:0.75rem;align-items:flex-start;"><span style="color:var(--fuchsia-core);font-size:1.1rem;">✓</span><span style="color:var(--warm-gray);font-size:0.9rem;">Sessions available in Hindi and English</span></li>
+                <li style="display:flex;gap:0.75rem;align-items:flex-start;"><span style="color:var(--fuchsia-core);font-size:1.1rem;">✓</span><span style="color:var(--warm-gray);font-size:0.9rem;">Flexible scheduling for working families</span></li>
+                <li style="display:flex;gap:0.75rem;align-items:flex-start;"><span style="color:var(--fuchsia-core);font-size:1.1rem;">✓</span><span style="color:var(--warm-gray);font-size:0.9rem;">Complete confidentiality and privacy</span></li>
+                <li style="display:flex;gap:0.75rem;align-items:flex-start;"><span style="color:var(--fuchsia-core);font-size:1.1rem;">✓</span><span style="color:var(--warm-gray);font-size:0.9rem;">Monthly family education workshops</span></li>
+                <li style="display:flex;gap:0.75rem;align-items:flex-start;"><span style="color:var(--fuchsia-core);font-size:1.1rem;">✓</span><span style="color:var(--warm-gray);font-size:0.9rem;">Post-discharge family follow-up for 1 year</span></li>
+              </ul>
+            </div>
+            <div class="card" style="margin-top:1.2rem;">
+              <div class="card-icon">📞</div>
+              <div class="card-title">Book a Family Consultation</div>
+              <p>Speak with our family counselling coordinator for a confidential, no-obligation discussion.</p>
+              <a href="tel:8447681144" class="btn-primary" style="display:inline-block;margin-top:1rem;font-size:0.88rem;">Call 8447681144</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Rehabilitation Services Panel -->
+      <div class="tab-panel" data-panel="rehab">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;" class="two-col-grid">
+          <div>
+            <h2 class="section-title">Rehabilitation <span>Services</span></h2>
+            <div class="divider"></div>
+            <p style="color:var(--warm-gray);line-height:1.8;margin-bottom:1.5rem;">
+              Our residential rehabilitation programme provides a structured, nurturing environment where individuals can heal deeply — away from triggers and with the constant support of clinical professionals, counsellors, and peers.
+            </p>
+            <div class="cards-grid" style="grid-template-columns:1fr 1fr;gap:1rem;">
+              <div class="card"><div class="card-icon">🛏️</div><div class="card-title">Residential Stay</div><p>Fully furnished, clean and comfortable rooms with 24/7 care and security.</p></div>
+              <div class="card"><div class="card-icon">🧘</div><div class="card-title">Holistic Therapies</div><p>Daily yoga, meditation, breathing exercises, and mindfulness practice.</p></div>
+              <div class="card"><div class="card-icon">📚</div><div class="card-title">Life Skills Training</div><p>Vocational guidance, financial literacy, and social skills rebuilding.</p></div>
+              <div class="card"><div class="card-icon">🤝</div><div class="card-title">Peer Support</div><p>Group therapy, 12-step facilitation, and peer mentorship from alumni.</p></div>
+              <div class="card"><div class="card-icon">🍱</div><div class="card-title">Nutritional Care</div><p>Dietician-planned, freshly cooked nutritious meals for physical recovery.</p></div>
+              <div class="card"><div class="card-icon">📋</div><div class="card-title">Aftercare Planning</div><p>Personalised post-discharge plan with relapse prevention and outpatient follow-up.</p></div>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:1.2rem;">
+              <h3 style="font-family:var(--font-display);font-size:1.4rem;color:var(--charcoal);margin-bottom:1rem;">Programme Structure</h3>
+              <div class="steps">
+                <div class="step"><div class="step-num">1</div><div class="step-text"><h4>Detoxification Phase (1–2 weeks)</h4><p>Medically supervised withdrawal management in a safe, clinical setting.</p></div></div>
+                <div class="step"><div class="step-num">2</div><div class="step-text"><h4>Intensive Therapy Phase (4–8 weeks)</h4><p>Daily individual and group therapy, CBT, motivational interviewing and spiritual counselling.</p></div></div>
+                <div class="step"><div class="step-num">3</div><div class="step-text"><h4>Reintegration Phase (2–4 weeks)</h4><p>Gradual return to daily responsibilities with continued therapeutic support.</p></div></div>
+                <div class="step"><div class="step-num">4</div><div class="step-text"><h4>Aftercare (12 months)</h4><p>Regular outpatient follow-ups, alumni groups, and family integration sessions.</p></div></div>
+              </div>
+            </div>
+            <a href="tel:8447681144" class="btn-primary" style="display:block;text-align:center;margin-top:0.5rem;">Enquire About Admission</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drug Addiction Programme Panel -->
+      <div class="tab-panel" data-panel="drug">
+        <div>
+          <h2 class="section-title">Drug Addiction <span>Programme</span></h2>
+          <div class="divider"></div>
+          <p style="color:var(--warm-gray);line-height:1.8;max-width:700px;margin-bottom:2.5rem;">
+            Our flagship de-addiction programme is built on the internationally recognised ASAM framework, combining medical management, evidence-based psychotherapy, holistic wellness, and long-term aftercare — all under one roof.
+          </p>
+          <div class="cards-grid">
+            <div class="card">
+              <div class="card-icon">🏥</div>
+              <div class="card-title">Medical Detoxification</div>
+              <p>24/7 medically supervised detox with pharmacological support to manage withdrawal safely and comfortably. Our physicians specialise in addiction medicine.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">🧠</div>
+              <div class="card-title">Dual Diagnosis Treatment</div>
+              <p>Simultaneous treatment of addiction and co-occurring mental health conditions such as depression, anxiety, trauma, and personality disorders.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">💬</div>
+              <div class="card-title">Cognitive Behavioural Therapy</div>
+              <p>Evidence-based CBT to identify and change thought patterns and behaviours that fuel substance use, with practical coping tools.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">🔄</div>
+              <div class="card-title">Relapse Prevention</div>
+              <p>SMART Recovery and 12-step programmes tailored for the Indian context, teaching practical strategies to identify triggers and prevent relapse.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">🌿</div>
+              <div class="card-title">Holistic Healing</div>
+              <p>Yoga, art therapy, music therapy, naturopathy, and spiritual counselling to heal the whole person — mind, body, and soul.</p>
+            </div>
+            <div class="card">
+              <div class="card-icon">📱</div>
+              <div class="card-title">Aftercare & Alumni Network</div>
+              <p>A vibrant alumni community, monthly follow-up calls, and a dedicated helpline for continued support long after discharge.</p>
+            </div>
+          </div>
+          <div style="margin-top:2.5rem;padding:2rem;background:linear-gradient(135deg,var(--fuchsia-deep),var(--plum));border-radius:var(--radius-lg);color:var(--white);text-align:center;">
+            <h3 style="font-family:var(--font-display);font-size:1.6rem;margin-bottom:0.75rem;">Substances We Treat</h3>
+            <div style="display:flex;flex-wrap:wrap;gap:0.75rem;justify-content:center;margin-top:1rem;">
+              <span style="background:rgba(255,255,255,0.15);border-radius:var(--radius-lg);padding:0.4rem 1rem;font-size:0.82rem;">Alcohol</span>
+              <span style="background:rgba(255,255,255,0.15);border-radius:var(--radius-lg);padding:0.4rem 1rem;font-size:0.82rem;">Heroin & Opioids</span>
+              <span style="background:rgba(255,255,255,0.15);border-radius:var(--radius-lg);padding:0.4rem 1rem;font-size:0.82rem;">Cannabis</span>
+              <span style="background:rgba(255,255,255,0.15);border-radius:var(--radius-lg);padding:0.4rem 1rem;font-size:0.82rem;">Cocaine</span>
+              <span style="background:rgba(255,255,255,0.15);border-radius:var(--radius-lg);padding:0.4rem 1rem;font-size:0.82rem;">Methamphetamine</span>
+              <span style="background:rgba(255,255,255,0.15);border-radius:var(--radius-lg);padding:0.4rem 1rem;font-size:0.82rem;">Prescription Drug Abuse</span>
+              <span style="background:rgba(255,255,255,0.15);border-radius:var(--radius-lg);padding:0.4rem 1rem;font-size:0.82rem;">Tobacco & Nicotine</span>
+              <span style="background:rgba(255,255,255,0.15);border-radius:var(--radius-lg);padding:0.4rem 1rem;font-size:0.82rem;">Behavioural Addictions</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div><!-- end #services -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 3 — GALLERY & CENTRE TOUR
+════════════════════════════════════════════════ -->
+<div class="page" id="gallery">
+  <div style="height:72px;"></div>
+
+  <div style="background:linear-gradient(135deg,var(--fuchsia-pale),#ffd6e8);padding:3.5rem 2rem 2.5rem;text-align:center;border-bottom:1px solid rgba(194,24,91,0.1);">
+    <div style="max-width:640px;margin:auto;">
+      <span class="section-label">Virtual Tour</span>
+      <h1 class="section-title">Gallery & <span>Centre Tour</span></h1>
+      <div class="divider center"></div>
+      <p style="color:var(--warm-gray);">Take a virtual walk through our healing sanctuary — designed to nurture, comfort and inspire hope.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+
+      <!-- Main Category Tabs -->
+      <div class="service-tabs" style="margin-bottom:0.5rem;">
+        <button class="tab-btn active" data-tab="facility">🏛️ Our Facility</button>
+        <button class="tab-btn" data-tab="inside">🛏️ Inside the Centre</button>
+        <button class="tab-btn" data-tab="safety">🛡️ Safety & Care</button>
+        <button class="tab-btn" data-tab="food">🍱 Food & Nutrition</button>
+      </div>
+
+      <!-- Our Facility -->
+      <div class="tab-panel active" data-panel="facility">
+        <p style="color:var(--warm-gray);margin:1.5rem 0 2rem;max-width:600px;">A peaceful, purpose-built environment in Greater Noida designed to feel like a home away from home — safe, clean, and surrounded by nature.</p>
+        <div class="gallery-grid">
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🏛️</span><p>Reception & Welcome Area</p></div><div class="gallery-caption"><h4>Grand Reception</h4><p>Warm, welcoming lobby with dedicated intake counsellors available round the clock.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🌳</span><p>Gardens & Open Spaces</p></div><div class="gallery-caption"><h4>Healing Gardens</h4><p>Lush green spaces for morning yoga, meditation, and peaceful reflection walks.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🧘</span><p>Therapy Hall</p></div><div class="gallery-caption"><h4>Group Therapy Hall</h4><p>Spacious, air-conditioned therapy room for group sessions, workshops and activities.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>📚</span><p>Library & Reading Room</p></div><div class="gallery-caption"><h4>Resource Library</h4><p>Curated collection of recovery literature, self-help books, and educational materials.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🏋️</span><p>Activity & Fitness Area</p></div><div class="gallery-caption"><h4>Wellness Zone</h4><p>Exercise equipment, indoor games, and recreation facilities for physical well-being.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🌸</span><p>Prayer & Spiritual Space</p></div><div class="gallery-caption"><h4>Meditation Chapel</h4><p>A serene multi-faith space for prayer, spiritual reflection, and inner peace.</p></div></div>
+        </div>
+      </div>
+
+      <!-- Inside Centre -->
+      <div class="tab-panel" data-panel="inside">
+        <div class="gallery-sub-tabs">
+          <button class="sub-tab active" data-group="inside" data-subtab="rooms">🛏️ Rooms & Beds</button>
+          <button class="sub-tab" data-group="inside" data-subtab="clean">✨ Cleanliness</button>
+        </div>
+        <div class="gallery-panel" data-group="inside" data-panel="rooms" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;">
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🛏️</span><p>Single Occupancy Room</p></div><div class="gallery-caption"><h4>Private Single Rooms</h4><p>Comfortable private rooms with attached bathroom, wardrobe, and natural lighting.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🏠</span><p>Shared Suite</p></div><div class="gallery-caption"><h4>Shared Suites (2–3 residents)</h4><p>Semi-private rooms fostering community while maintaining personal space and privacy.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🪟</span><p>Garden View Room</p></div><div class="gallery-caption"><h4>Garden View Rooms</h4><p>Premium rooms overlooking the healing garden — nature's therapy at every sunrise.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🛁</span><p>En-suite Bathroom</p></div><div class="gallery-caption"><h4>Well-equipped Bathrooms</h4><p>Modern, hygienic bathrooms with all essential toiletries provided.</p></div></div>
+        </div>
+        <div class="gallery-panel" data-group="inside" data-panel="clean" style="display:none;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:1.2rem;">
+          <div class="gallery-card"><div class="gallery-placeholder"><span>✨</span><p>Daily Sanitisation</p></div><div class="gallery-caption"><h4>Morning Sanitisation</h4><p>All rooms, corridors and common areas are thoroughly cleaned and sanitised every morning.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🧹</span><p>Housekeeping Team</p></div><div class="gallery-caption"><h4>Dedicated Housekeeping</h4><p>Full-time housekeeping staff maintaining the highest standards of cleanliness throughout.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🌬️</span><p>Air Quality & Ventilation</p></div><div class="gallery-caption"><h4>Fresh Air & Ventilation</h4><p>All spaces are well-ventilated with air purifiers in therapy rooms and dining areas.</p></div></div>
+        </div>
+      </div>
+
+      <!-- Safety & Care -->
+      <div class="tab-panel" data-panel="safety">
+        <p style="color:var(--warm-gray);margin:1.5rem 0 2rem;max-width:600px;">The safety of every resident is our highest priority. Our centre is equipped with comprehensive safety infrastructure and a deeply caring clinical team.</p>
+        <div class="gallery-grid">
+          <div class="gallery-card"><div class="gallery-placeholder"><span>📹</span><p>24/7 CCTV Monitoring</p></div><div class="gallery-caption"><h4>Secure Campus</h4><p>24-hour CCTV surveillance covering all common areas, ensuring a safe and secure environment.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>👨‍⚕️</span><p>Medical Care Team</p></div><div class="gallery-caption"><h4>Round-the-Clock Medical Team</h4><p>Qualified nurses and physicians on duty 24/7 to respond to any medical needs immediately.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🚨</span><p>Emergency Response</p></div><div class="gallery-caption"><h4>Emergency Protocols</h4><p>Trained staff and clear emergency response protocols linked to the nearest hospital.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🔒</span><p>Controlled Access</p></div><div class="gallery-caption"><h4>Controlled Entry & Exit</h4><p>All entry and exit is monitored to maintain the safety and focus of our residents.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>💊</span><p>Medication Management</p></div><div class="gallery-caption"><h4>Safe Medication Dispensing</h4><p>All medications dispensed under strict clinical supervision with individual medication records.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🤝</span><p>Peer Safety Culture</p></div><div class="gallery-caption"><h4>Community of Care</h4><p>A structured peer support system where residents look out for one another with staff guidance.</p></div></div>
+        </div>
+      </div>
+
+      <!-- Food & Nutrition -->
+      <div class="tab-panel" data-panel="food">
+        <p style="color:var(--warm-gray);margin:1.5rem 0 2rem;max-width:600px;">Good nutrition is a cornerstone of recovery. Our in-house kitchen serves freshly prepared, balanced meals designed by a certified nutritionist to support physical healing.</p>
+        <div class="gallery-grid">
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🍳</span><p>Fresh Kitchen</p></div><div class="gallery-caption"><h4>Hygienic In-house Kitchen</h4><p>Professionally managed kitchen with strict food hygiene standards and daily quality checks.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🥗</span><p>Balanced Meals</p></div><div class="gallery-caption"><h4>Nutritionist-planned Meals</h4><p>Three wholesome meals a day — breakfast, lunch, and dinner — with mid-meal healthy snacks.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🍵</span><p>Herbal Teas & Beverages</p></div><div class="gallery-caption"><h4>Therapeutic Beverages</h4><p>Ayurvedic herbal teas, fresh juices, and health drinks to support detoxification and immunity.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🥘</span><p>Special Diet Provisions</p></div><div class="gallery-caption"><h4>Customised Diet Plans</h4><p>Vegetarian, diabetic-friendly, high-protein, and allergy-specific diets accommodated.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🌾</span><p>Organic Ingredients</p></div><div class="gallery-caption"><h4>Fresh & Local Ingredients</h4><p>Locally sourced seasonal vegetables and grains for maximum nutritional value.</p></div></div>
+          <div class="gallery-card"><div class="gallery-placeholder"><span>🍽️</span><p>Dining Hall</p></div><div class="gallery-caption"><h4>Community Dining Space</h4><p>Bright, spacious dining hall fostering community bonds during shared meal times.</p></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div><!-- end #gallery -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 4 — LOCATION & CONTACT
+════════════════════════════════════════════════ -->
+<div class="page" id="location">
+  <div style="height:72px;"></div>
+
+  <div style="background:linear-gradient(135deg,var(--fuchsia-pale),#ffd6e8);padding:3.5rem 2rem 2.5rem;text-align:center;border-bottom:1px solid rgba(194,24,91,0.1);">
+    <div style="max-width:640px;margin:auto;">
+      <span class="section-label">Reach Out to Us</span>
+      <h1 class="section-title">Location & <span>Contact</span></h1>
+      <div class="divider center"></div>
+      <p style="color:var(--warm-gray);">We are here for you. Reach out anytime — our team is available 24/7 to guide you and your family towards healing.</p>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section-inner">
+
+      <!-- Branch Tabs -->
+      <div class="service-tabs">
+        <button class="tab-btn active" data-tab="gnoida">🏢 Greater Noida — Main Centre</button>
+        <button class="tab-btn" data-tab="dehradun">🏔️ Dehradun — Branch Centre</button>
+        <button class="tab-btn" data-tab="form">✉️ Send a Message</button>
+      </div>
+
+      <!-- Greater Noida -->
+      <div class="tab-panel active" data-panel="gnoida">
+        <div class="location-grid">
+          <div class="location-card main">
+            <span class="location-badge main-badge">🏢 Main Centre — Greater Noida</span>
+            <h3>Hugs Life Holistic</h3>
+            <p class="address">Greater Noida, Uttar Pradesh, India<br>Website: <a href="https://hugslifeholistic.org" target="_blank" style="color:var(--fuchsia-core);">hugslifeholistic.org</a></p>
+            <div class="contact-item"><span class="icon">📞</span><span><strong>Primary:</strong> <a href="tel:8447681144" style="color:var(--fuchsia-core);">8447681144</a></span></div>
+            <div class="contact-item"><span class="icon">📞</span><span><strong>Alternate:</strong> <a href="tel:7303729913" style="color:var(--fuchsia-core);">7303729913</a></span></div>
+            <div class="contact-item"><span class="icon">🌐</span><span><a href="https://hugslifeholistic.org" target="_blank" style="color:var(--fuchsia-core);">hugslifeholistic.org</a></span></div>
+            <div class="contact-item"><span class="icon">🕐</span><span>Open 24 hours, 7 days a week</span></div>
+            <div class="contact-item"><span class="icon">🇮🇳</span><span>Nasha Mukt Bharat Abhiyan Partner Centre</span></div>
+            <a href="https://maps.app.goo.gl/mStDsYZFH5zRnAdg7" target="_blank" class="map-btn">📍 Open in Google Maps</a>
+            <div class="map-embed">
+              <iframe
+                src="https://maps.google.com/maps?q=Greater+Noida+Uttar+Pradesh&output=embed"
+                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Greater Noida Centre Location">
+              </iframe>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:1.2rem;">
+              <div class="card-icon">🚗</div>
+              <div class="card-title">How to Reach Us</div>
+              <p style="margin-bottom:1rem;">Greater Noida is well-connected by road and metro from Delhi, Noida, Faridabad and Ghaziabad.</p>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
+                <li style="display:flex;gap:0.6rem;font-size:0.85rem;color:var(--warm-gray);"><span>🚇</span><span><strong>Metro:</strong> Aqua Line — nearest station accessible by auto-rickshaw</span></li>
+                <li style="display:flex;gap:0.6rem;font-size:0.85rem;color:var(--warm-gray);"><span>🚗</span><span><strong>By Road:</strong> Well-connected via Yamuna Expressway and NH-09</span></li>
+                <li style="display:flex;gap:0.6rem;font-size:0.85rem;color:var(--warm-gray);"><span>✈️</span><span><strong>From Delhi Airport:</strong> Approx. 45–60 min via Yamuna Expressway</span></li>
+                <li style="display:flex;gap:0.6rem;font-size:0.85rem;color:var(--warm-gray);"><span>🚂</span><span><strong>From Railway Stations:</strong> Hazrat Nizamuddin / New Delhi — 45 min by road</span></li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-icon">⚡</div>
+              <div class="card-title">Emergency Admission</div>
+              <p>If you or a loved one needs immediate help, call us right now. We are equipped to arrange emergency admissions on the same day.</p>
+              <a href="tel:8447681144" class="btn-primary" style="display:block;text-align:center;margin-top:1rem;">📞 Emergency: 8447681144</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Dehradun -->
+      <div class="tab-panel" data-panel="dehradun">
+        <div class="location-grid">
+          <div class="location-card branch">
+            <span class="location-badge branch-badge">🏔️ Branch Centre — Dehradun</span>
+            <h3>Nasha Mukti Kendra Dehradun</h3>
+            <p class="address">Dehradun, Uttarakhand, India</p>
+            <div class="contact-item"><span class="icon">📞</span><span><strong>Contact:</strong> <a href="tel:7303729913" style="color:var(--fuchsia-core);">7303729913</a></span></div>
+            <div class="contact-item"><span class="icon">🌐</span><span><a href="https://mcmasnu.github.io/Nashamuktikendradehradun" target="_blank" style="color:var(--fuchsia-core);">Dehradun Branch Website</a></span></div>
+            <div class="contact-item"><span class="icon">🕐</span><span>Open 24 hours, 7 days a week</span></div>
+            <div class="contact-item"><span class="icon">🇮🇳</span><span>Nasha Mukt Bharat Abhiyan Partner Centre</span></div>
+            <a href="https://maps.app.goo.gl/ePgnuSFSn2q6R8857" target="_blank" class="map-btn">📍 Open in Google Maps</a>
+            <div class="map-embed">
+              <iframe
+                src="https://maps.google.com/maps?q=Dehradun+Uttarakhand&output=embed"
+                allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Dehradun Branch Location">
+              </iframe>
+            </div>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:1.2rem;">
+              <div class="card-icon">🏔️</div>
+              <div class="card-title">About the Dehradun Branch</div>
+              <p>Our Dehradun centre serves the Uttarakhand region with the same high standard of holistic addiction care as our flagship Greater Noida centre. Set in the scenic foothills of the Himalayas, it offers a uniquely serene healing environment.</p>
+            </div>
+            <div class="card" style="margin-bottom:1.2rem;">
+              <div class="card-icon">🚗</div>
+              <div class="card-title">How to Reach Dehradun</div>
+              <ul style="list-style:none;display:flex;flex-direction:column;gap:0.6rem;">
+                <li style="display:flex;gap:0.6rem;font-size:0.85rem;color:var(--warm-gray);"><span>✈️</span><span><strong>By Air:</strong> Jolly Grant Airport, Dehradun (30 min drive)</span></li>
+                <li style="display:flex;gap:0.6rem;font-size:0.85rem;color:var(--warm-gray);"><span>🚂</span><span><strong>By Train:</strong> Dehradun Railway Station (well-connected from Delhi)</span></li>
+                <li style="display:flex;gap:0.6rem;font-size:0.85rem;color:var(--warm-gray);"><span>🚌</span><span><strong>By Road:</strong> NH 7 from Delhi (~6 hours); buses & taxis available</span></li>
+              </ul>
+            </div>
+            <div class="card">
+              <div class="card-icon">⚡</div>
+              <div class="card-title">Contact Dehradun Branch</div>
+              <a href="tel:7303729913" class="btn-primary" style="display:block;text-align:center;margin-top:0.5rem;">📞 Call: 7303729913</a>
+              <a href="https://mcmasnu.github.io/Nashamuktikendradehradun" target="_blank" class="btn-secondary" style="display:block;text-align:center;margin-top:0.75rem;">🌐 Visit Dehradun Website</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Form -->
+      <div class="tab-panel" data-panel="form">
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;" class="two-col-grid">
+          <div class="contact-form">
+            <h3>Send Us a Message</h3>
+            <p>We will respond within 2 hours. All enquiries are completely confidential.</p>
+            <form id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label>Your Name *</label>
+                  <input type="text" placeholder="Full name" required />
+                </div>
+                <div class="form-group">
+                  <label>Phone Number *</label>
+                  <input type="tel" placeholder="Mobile number" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label>Email Address</label>
+                <input type="email" placeholder="your@email.com" />
+              </div>
+              <div class="form-group">
+                <label>Which Centre?</label>
+                <select>
+                  <option>Greater Noida — Main Centre</option>
+                  <option>Dehradun — Branch Centre</option>
+                  <option>Not sure — need guidance</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Type of Enquiry</label>
+                <select>
+                  <option>Admission for myself</option>
+                  <option>Admission for a family member</option>
+                  <option>Family counselling</option>
+                  <option>General information</option>
+                  <option>Emergency</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label>Message</label>
+                <textarea placeholder="Please share any details that would help us assist you better..."></textarea>
+              </div>
+              <button type="submit" class="btn-primary" style="width:100%;padding:1rem;">Send Message</button>
+            </form>
+          </div>
+          <div>
+            <div class="card" style="margin-bottom:1.2rem;">
+              <div class="card-icon">📞</div>
+              <div class="card-title">Call Us Directly</div>
+              <p style="margin-bottom:1rem;">Our intake counsellors are available 24 hours a day, 7 days a week. Do not hesitate to call — there is no wrong time to seek help.</p>
+              <div style="display:flex;flex-direction:column;gap:0.8rem;">
+                <a href="tel:8447681144" style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1.2rem;background:linear-gradient(135deg,var(--fuchsia-core),var(--fuchsia-deep));border-radius:var(--radius-md);color:var(--white);text-decoration:none;font-weight:600;">
+                  <span style="font-size:1.4rem;">📱</span>
+                  <div><div style="font-size:0.7rem;opacity:0.8;letter-spacing:0.1em;">PRIMARY HELPLINE</div><div style="font-size:1.1rem;">8447681144</div></div>
+                </a>
+                <a href="tel:7303729913" style="display:flex;align-items:center;gap:0.75rem;padding:0.85rem 1.2rem;background:var(--fuchsia-blush);border:2px solid var(--fuchsia-light);border-radius:var(--radius-md);color:var(--fuchsia-deep);text-decoration:none;font-weight:600;">
+                  <span style="font-size:1.4rem;">📱</span>
+                  <div><div style="font-size:0.7rem;opacity:0.7;letter-spacing:0.1em;">ALTERNATE HELPLINE</div><div style="font-size:1.1rem;">7303729913</div></div>
+                </a>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">🇮🇳</div>
+              <div class="card-title">Part of a National Mission</div>
+              <p>Hugs Life Holistic is a proud partner in the Government of India's <strong>Nasha Mukt Bharat Abhiyan</strong> — working to build a drug-free India through community-based rehabilitation and awareness.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+</div><!-- end #location -->
+
+
+<!-- ═══════════════════════════════════════════════
+     PAGE 5 — WHY HLH DIFFERENCE
+════════════════════════════════════════════════ -->
+<div class="page" id="why">
+  <div style="height:72px;"></div>
+
+  <div style="background:linear-gradient(135deg,var(--fuchsia-pale),#ffd6e8);padding:3.5rem 2rem 2.5rem;text-align:center;border-bottom:1px solid rgba(194,24,91,0.1);">
+    <div style="max-width:640px;margin:auto;">
+      <span class="section-label">Our Difference</span>
+      <h1 class="section-title">Why <span>Hugs Life Holistic?</span></h1>
+      <div class="divider center"></div>
+      <p style="color:var(--warm-gray);">We are not just a rehabilitation centre — we are a movement of healing. Here is what sets us apart from the rest.</p>
+    </div>
+  </div>
+
+  <!-- Core Differentiators -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="why-grid">
+        <div class="why-feature reveal">
+          <div class="why-icon">🌿</div>
+          <div class="why-text"><h4>Truly Holistic Approach</h4><p>We treat the whole person — body, mind, and spirit. Our treatment integrates modern medicine with yoga, Ayurveda, meditation, art therapy, and spiritual counselling for complete healing.</p></div>
+        </div>
+        <div class="why-feature reveal reveal-delay-1">
+          <div class="why-icon">👨‍⚕️</div>
+          <div class="why-text"><h4>Expert Multidisciplinary Team</h4><p>Psychiatrists, addiction medicine physicians, psychologists, certified counsellors, yoga instructors, nutritionists and social workers — all working as one integrated team for you.</p></div>
+        </div>
+        <div class="why-feature reveal reveal-delay-2">
+          <div class="why-icon">👨‍👩‍👧‍👦</div>
+          <div class="why-text"><h4>Family-Centred Care</h4><p>We involve families at every stage of recovery. Our unique family healing protocol ensures that the home environment becomes a sanctuary of support, not a trigger.</p></div>
+        </div>
+        <div class="why-feature reveal reveal-delay-3">
+          <div class="why-icon">🔒</div>
+          <div class="why-text"><h4>Complete Confidentiality</h4><p>We treat every admission with absolute discretion. Your privacy and dignity are protected throughout your stay and beyond. No information is ever shared without consent.</p></div>
+        </div>
+        <div class="why-feature reveal">
+          <div class="why-icon">🏡</div>
+          <div class="why-text"><h4>Homely, Safe Environment</h4><p>Our centre feels like a warm home — not a clinical institution. Residents are treated with respect, love, and dignity. Every space is thoughtfully designed to inspire healing.</p></div>
+        </div>
+        <div class="why-feature reveal reveal-delay-1">
+          <div class="why-icon">📊</div>
+          <div class="why-text"><h4>Evidence-Based Programmes</h4><p>Our treatment protocols are grounded in internationally validated, evidence-based methodologies including CBT, Motivational Interviewing, REBT, and 12-step facilitation.</p></div>
+        </div>
+        <div class="why-feature reveal reveal-delay-2">
+          <div class="why-icon">🇮🇳</div>
+          <div class="why-text"><h4>Government-Aligned Initiative</h4><p>As proud partners of the Nasha Mukt Bharat Abhiyan, we uphold the highest national standards for de-addiction care and contribute actively to building a drug-free India.</p></div>
+        </div>
+        <div class="why-feature reveal reveal-delay-3">
+          <div class="why-icon">📅</div>
+          <div class="why-text"><h4>Lifelong Aftercare Support</h4><p>Recovery does not end at discharge. Our 12-month structured aftercare programme, alumni network, and 24/7 helpline ensure you are never alone in your journey.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Band -->
+  <section class="section band-fuchsia">
+    <div class="section-inner">
+      <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2rem;text-align:center;" class="stats-row">
+        <div>
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:700;color:var(--white);line-height:1;">500+</div>
+          <div style="color:var(--fuchsia-light);font-size:0.85rem;margin-top:0.5rem;">Lives Transformed</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:700;color:var(--white);line-height:1;">2</div>
+          <div style="color:var(--fuchsia-light);font-size:0.85rem;margin-top:0.5rem;">Centres Across India</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:700;color:var(--white);line-height:1;">24/7</div>
+          <div style="color:var(--fuchsia-light);font-size:0.85rem;margin-top:0.5rem;">Support Available</div>
+        </div>
+        <div>
+          <div style="font-family:var(--font-display);font-size:3rem;font-weight:700;color:var(--white);line-height:1;">85%</div>
+          <div style="color:var(--fuchsia-light);font-size:0.85rem;margin-top:0.5rem;">Long-term Recovery Rate</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team & Values -->
+  <section class="section">
+    <div class="section-inner">
+      <div class="section-header center reveal">
+        <span class="section-label">Our Foundation</span>
+        <h2 class="section-title">Values That <span>Guide Us</span></h2>
+        <div class="divider center"></div>
+      </div>
+      <div class="cards-grid">
+        <div class="card reveal reveal-delay-1">
+          <div class="card-icon">💕</div>
+          <div class="card-title">Compassion First</div>
+          <p>Every resident is received with kindness and without judgement. Addiction is a disease — not a moral failing. We treat it with clinical expertise and human warmth.</p>
+        </div>
+        <div class="card reveal reveal-delay-2">
+          <div class="card-icon">🎯</div>
+          <div class="card-title">Individualised Treatment</div>
+          <p>No two journeys are identical. Every resident receives a personalised treatment plan built around their specific substance use, mental health, cultural background, and life goals.</p>
+        </div>
+        <div class="card reveal reveal-delay-3">
+          <div class="card-icon">🌱</div>
+          <div class="card-title">Long-term Recovery</div>
+          <p>We focus not on short-term sobriety, but on building a sustainable, fulfilling life beyond addiction. Our aftercare systems are designed for decades, not just months.</p>
+        </div>
+        <div class="card reveal reveal-delay-4">
+          <div class="card-icon">🤝</div>
+          <div class="card-title">Transparency & Trust</div>
+          <p>We maintain open, honest communication with families throughout the treatment journey. You will always know what is happening and why — because trust is everything.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA -->
+  <section class="section accent-band" style="text-align:center;">
+    <div class="section-inner" style="padding:3rem 2rem;">
+      <h2 class="section-title reveal">Begin the Journey <span>Today</span></h2>
+      <div class="divider center"></div>
+      <p style="color:var(--warm-gray);max-width:520px;margin:0 auto 2rem;line-height:1.78;" class="reveal reveal-delay-1">Every moment matters. If you or someone you love is struggling with addiction, the most important thing you can do right now is reach out.</p>
+      <div style="display:flex;gap:1rem;justify-content:center;flex-wrap:wrap;" class="reveal reveal-delay-2">
+        <a href="tel:8447681144" class="btn-primary">📞 Call 8447681144</a>
+        <a href="#" class="btn-secondary nav-link" data-page="services">Explore Services</a>
+        <a href="#" class="btn-secondary nav-link" data-page="location">Find a Centre</a>
+      </div>
+    </div>
+  </section>
+
+</div><!-- end #why -->
+
+
+<!-- ===== FOOTER ===== -->
 <footer>
-  <p>© 2026 Hugslife Holistic | All Rights Reserved</p>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="brand-name">Hugs Life Holistic</div>
+      <div class="brand-tag">A Mental Health Establishment</div>
+      <p>Compassionate, evidence-based rehabilitation for addiction and mental health. Serving Greater Noida and Dehradun. Proudly supporting Nasha Mukt Bharat Abhiyan — an initiative of the Government of India.</p>
+      <div class="govt-banner" style="margin-top:1.5rem;padding:0.9rem 1.2rem;background:rgba(255,255,255,0.05);border-color:rgba(255,255,255,0.1);">
+        <span class="flag">🇮🇳</span>
+        <div class="govt-banner-text">
+          <strong style="color:var(--fuchsia-light);">Nasha Mukt Bharat Abhiyan</strong>
+          <span style="color:rgba(255,255,255,0.5);">Government of India Initiative</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a data-page="home">Home</a></li>
+        <li><a data-page="services">Services</a></li>
+        <li><a data-page="gallery">Gallery & Tour</a></li>
+        <li><a data-page="location">Location & Contact</a></li>
+        <li><a data-page="why">Why HLH?</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Our Services</h4>
+      <ul>
+        <li><a data-page="services">Family Counselling</a></li>
+        <li><a data-page="services">Rehabilitation Services</a></li>
+        <li><a data-page="services">Drug Addiction Programme</a></li>
+        <li><a data-page="services">Detoxification</a></li>
+        <li><a data-page="services">Aftercare Support</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact Us</h4>
+      <div class="footer-contact-item"><span class="ico">📞</span><span>8447681144</span></div>
+      <div class="footer-contact-item"><span class="ico">📞</span><span>7303729913</span></div>
+      <div class="footer-contact-item"><span class="ico">🌐</span><span>hugslifeholistic.org</span></div>
+      <div class="footer-contact-item"><span class="ico">📍</span><span>Greater Noida, UP (Main)</span></div>
+      <div class="footer-contact-item"><span class="ico">📍</span><span>Dehradun, Uttarakhand</span></div>
+      <div class="footer-contact-item"><span class="ico">🕐</span><span>Open 24/7</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 Hugs Life Holistic. All rights reserved.</span>
+    <span>Made with 💕 for a Nasha Mukt Bharat</span>
+  </div>
 </footer>
 
-<script>
-  document.querySelectorAll('.btn, nav a').forEach(el => {
-    el.addEventListener('mouseover', () => {
-      el.style.opacity = '0.8';
-    });
-    el.addEventListener('mouseout', () => {
-      el.style.opacity = '1';
-    });
-  });
-</script>
+<!-- Responsive two-col fix -->
+<style>
+  @media (max-width: 768px) {
+    .two-col-grid { grid-template-columns: 1fr !important; gap: 2rem !important; }
+    .stats-row { grid-template-columns: 1fr 1fr !important; gap: 1.5rem !important; }
+  }
+</style>
 
+<script src="main.js"></script>
 </body>
 </html>
-
