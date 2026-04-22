@@ -153,7 +153,7 @@ body {
 
 .nav-cta {
   background: linear-gradient(135deg, var(--fuchsia-core), var(--fuchsia-deep));
-  color: var(--white) !important;
+  color: var(--black) !important;
   border-radius: var(--radius-lg) !important;
   padding: 0.5rem 1.3rem !important;
   font-weight: 600 !important;
